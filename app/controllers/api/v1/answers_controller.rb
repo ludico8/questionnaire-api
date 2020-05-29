@@ -29,8 +29,8 @@ module Api
 
       # Search answers
       def search
-        # Pending implementation ...
-        json_response({status: 'SUCCESS', message: 'Answers', data: []}, :created)
+        search_result = Answer.get_filtered_answers(params, default_search?)
+        json_response({status: 'SUCCESS', message: 'Answers', data: search_result}, :created)
       end
 
       # Deletes specific Answer by id
