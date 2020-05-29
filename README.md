@@ -130,6 +130,9 @@ Additional Apis:
 - [GET] https://questionnaire-api-project.herokuapp.com/api/v1/questions/:id
 - CRUD actions for each model included.
 
+### Notes
+Remember, since I'm using a Heroku free account, the `dyno` might not be listening up, so the first time you reach them, probably it would take some time until the `dyno` is started and process your first request.
+
 ## Authors
 
 * **Diego Corrales** - [Questionnaire API](https://github.com/ludico8/questionnaire-api) - [@ludico8](https://www.linkedin.com/in/ludico8/)
